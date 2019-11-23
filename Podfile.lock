@@ -1,0 +1,28 @@
+PODS:
+  - DropDown (2.3.2)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - Siesta (1.4.1):
+    - Siesta/Core (= 1.4.1)
+  - Siesta/Core (1.4.1)
+
+DEPENDENCIES:
+  - DropDown (= 2.3.2)
+  - SDWebImage (~> 4.0)
+  - Siesta (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DropDown
+    - SDWebImage
+    - Siesta
+
+SPEC CHECKSUMS:
+  DropDown: 7f87abecc28f9b4edad810fe1211c5c018c257e5
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  Siesta: 867050feecf44d163f83272d9fc21553319c6dc0
+
+PODFILE CHECKSUM: 8ec96ac522f14f9e1d83e5caa6bf161656ce19b9
+
+COCOAPODS: 1.5.3
