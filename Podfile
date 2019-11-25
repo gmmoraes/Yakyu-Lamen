@@ -6,7 +6,10 @@ target 'Yakyu Lamen' do
   use_frameworks!
 
   # Pods for Yakyu Lamen
-  pod 'Siesta', '~> 1.0'
-  pod 'SDWebImage', '~> 4.0'
-  pod 'DropDown', '2.3.2'
+  pod 'Siesta'
+  pod 'SDWebImage'
+  pod 'DropDown'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
+
 end

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Siesta
 import SDWebImage
 import DropDown
 
@@ -27,10 +26,13 @@ class StoresTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //YelpRequest.sharedInstance.requestApi() Todo Substitue Siesta by URL request
-        restaurantListResource = YelpAPI.sharedInstance.restaurantList(for: LeagueMapController.sharedInstance.address)  //passa o endereço para a variavel
+        YelpRequest.sharedInstance.configureLocation(location: LeagueMapController.sharedInstance.address){ (response) -> () in
 
+            DispatchQueue.main.async(execute: {
+                self.restaurants = response
+                self.tableView.reloadData()
+            })
+        }
         
         //Navigation
         self.navigationItem.title = title
@@ -44,7 +46,6 @@ class StoresTableViewController: UITableViewController {
         let backButton = UIButton(type: .custom)
         backButton.setImage(backButtonImage, for: .normal)
         backButton.setTitle("  Back", for: .normal)
-        //backButton.setTitleColor(UIColor(red: 0/255, green: 123/255, blue: 255/255,  alpha: 2.0), for: .normal)
         backButton.setTitleColor(.black, for: .normal)
         backButton.addTarget(self, action: #selector(self.backButtonPressed), for: .touchUpInside)
         return backButton
@@ -52,7 +53,6 @@ class StoresTableViewController: UITableViewController {
     
     @objc func backButtonPressed() {
         dismiss(animated: true, completion: nil)
-        //        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func segmentControlValueChanged(_ sender: UISegmentedControl) {
@@ -62,29 +62,7 @@ class StoresTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    var restaurantListResource: Resource? {
-        didSet {
-            // 1
-            oldValue?.removeObservers(ownedBy: self)
-            
-            // 2
-            restaurantListResource?
-                .addObserver(self)
-                // 3
-                .loadIfNeeded()
-        }
-    }
 
-
-}
-
-// MARK: - ResourceObserver
-extension StoresTableViewController: ResourceObserver {
-    func resourceChanged(_ resource: Resource, event: ResourceEvent) {
-        restaurants = resource.typedContent() ?? []
-        
     }
 }
 

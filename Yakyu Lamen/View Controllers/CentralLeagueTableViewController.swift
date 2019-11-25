@@ -17,7 +17,6 @@ class CentralLeagueTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.tabBarController!.selectedIndex)
         dataSource.teams = ["Toyo Carp","Hanshin Tigers","DeNA BayStars","Yomiuri Giants","Chunichi Dragons","Yakult Swallows"]
         dataSource.address = ["2 Chome-3-1 Minamikaniya, Minami Ward, Hiroshima, Hiroshima Prefecture 732-0803, Japan", "1-82 Koshiencho, Nishinomiya, Hyōgo Prefecture 663-8152, Japan","Yokohamakoen, Naka Ward, Yokohama, Kanagawa Prefecture 231-0022, Japan","1 Chome-3-61 Koraku, Bunkyō, Tokyo 112-0004, Japan","1 Chome-1-1 Daikominami, Higashi Ward, Nagoya, Aichi Prefecture 461-0047, Japan","3-1 Kasumigaokamachi, Shinjuku, Tokyo 160-0013, Japan"]
         dataSource.city = ["Hiroshima", "Nishinomiya","Yokohama","Tokyo","Nagoya","Shinjuku"]

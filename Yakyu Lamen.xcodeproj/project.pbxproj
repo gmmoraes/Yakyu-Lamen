@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,9 @@
 		53CF690A21CC930000CB41D7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF690921CC930000CB41D7 /* Restaurant.swift */; };
 		53E509C621BFCC70000DA737 /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E509C521BFCC70000DA737 /* StoresTableViewController.swift */; };
 		53FDF82C21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDF82B21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift */; };
+		885830CB238B666400A4B59A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885830CA238B666400A4B59A /* Request.swift */; };
+		88595112238B54EE006166D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88595111238B54EE006166D9 /* GoogleService-Info.plist */; };
+		88595114238B61F6006166D9 /* FireBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88595113238B61F6006166D9 /* FireBaseRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		53CF690921CC930000CB41D7 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		53E509C521BFCC70000DA737 /* StoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
 		53FDF82B21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacificLeagueDataSource.swift; sourceTree = "<group>"; };
+		885830CA238B666400A4B59A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		88595111238B54EE006166D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		88595113238B61F6006166D9 /* FireBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseRequest.swift; sourceTree = "<group>"; };
 		DDBB0A09D743D3AEFFA73B5E /* Pods-Yakyu Lamen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yakyu Lamen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +115,7 @@
 				5348D14E21BD78770009990C /* Assets.xcassets */,
 				5348D15021BD78770009990C /* LaunchScreen.storyboard */,
 				5348D15321BD78770009990C /* Info.plist */,
+				88595111238B54EE006166D9 /* GoogleService-Info.plist */,
 			);
 			path = "Yakyu Lamen";
 			sourceTree = "<group>";
@@ -180,6 +187,8 @@
 			children = (
 				53185DBB21C4ACB1006558F8 /* YelpAPI.swift */,
 				53AEEF642324028A003EA007 /* YelpRequest.swift */,
+				88595113238B61F6006166D9 /* FireBaseRequest.swift */,
+				885830CA238B666400A4B59A /* Request.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -268,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5348D15221BD78770009990C /* LaunchScreen.storyboard in Resources */,
+				88595112238B54EE006166D9 /* GoogleService-Info.plist in Resources */,
 				5348D14F21BD78770009990C /* Assets.xcassets in Resources */,
 				5348D14D21BD78740009990C /* Main.storyboard in Resources */,
 			);
@@ -281,21 +291,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/Siesta/Siesta.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Siesta.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B85101FD5630FCA0D2770DE7 /* [CP] Check Pods Manifest.lock */ = {
@@ -331,12 +336,14 @@
 				5371CDE921DD5381003A51B3 /* LeagueMapController.swift in Sources */,
 				53E509C621BFCC70000DA737 /* StoresTableViewController.swift in Sources */,
 				535C349A21D59E170033D560 /* RatingControl.swift in Sources */,
+				88595114238B61F6006166D9 /* FireBaseRequest.swift in Sources */,
 				531BCFA521BDE5110023CA54 /* CentralLeagueTableViewController.swift in Sources */,
 				53185DBC21C4ACB1006558F8 /* YelpAPI.swift in Sources */,
 				537AE0CD21BDA301000E3E0C /* PacificLeagueTableViewController.swift in Sources */,
 				5320A38621DA2C4A00B6C693 /* MapIconView.swift in Sources */,
 				5348D14621BD78740009990C /* AppDelegate.swift in Sources */,
 				5348D15A21BD7B240009990C /* LaunchScreenViewController.swift in Sources */,
+				885830CB238B666400A4B59A /* Request.swift in Sources */,
 				531BCFA321BDDADF0023CA54 /* DataSource.swift in Sources */,
 				53AEEF652324028A003EA007 /* YelpRequest.swift in Sources */,
 				5367921621DDBF8A007F56BD /* LeagueTableViewController.swift in Sources */,

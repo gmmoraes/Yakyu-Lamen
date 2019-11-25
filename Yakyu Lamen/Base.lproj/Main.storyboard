@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IKf-lm-Wv2">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IKf-lm-Wv2">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +18,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pacificLeaguePrototype" id="hxU-1P-g04">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hxU-1P-g04" id="0aQ-6d-Edb">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -36,7 +33,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Pick a team" id="7Dk-Da-Tje"/>
                     <connections>
-                        <segue destination="lpj-lq-gUI" kind="show" identifier="pacificLeagueShowStores" id="Fid-e5-AIZ"/>
+                        <segue destination="lpj-lq-gUI" kind="presentation" identifier="pacificLeagueShowStores" modalPresentationStyle="fullScreen" id="Fid-e5-AIZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruk-xf-Nn7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -66,7 +63,7 @@
                     <connections>
                         <outlet property="hface" destination="fUx-HB-bWk" id="7nR-ro-h39"/>
                         <outlet property="logoAppImg" destination="ndA-84-yS8" id="USd-km-uOF"/>
-                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="goToTeamPage" id="eVh-bx-cqS"/>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="goToTeamPage" modalPresentationStyle="fullScreen" id="eVh-bx-cqS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbx-pv-cTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,11 +97,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="centralLeaguePrototype" id="8NS-zs-GwP">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="centralLeaguePrototype" id="8NS-zs-GwP">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8NS-zs-GwP" id="qyA-tU-zMk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="316" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-rV-t4T">
@@ -114,7 +111,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="lpj-lq-gUI" kind="show" identifier="showStores" trigger="accessoryAction" id="7G2-ns-HMi"/>
+                                    <segue destination="lpj-lq-gUI" kind="presentation" identifier="showStores" trigger="accessoryAction" modalPresentationStyle="fullScreen" id="7G2-ns-HMi"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -154,7 +151,7 @@
                                 <rect key="frame" x="0.0" y="58" width="375" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ASB-8l-IWN" id="vw9-j9-4mt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W6L-HI-W22">
@@ -173,13 +170,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-ge-2hB" customClass="RatingControl" customModule="Yakyu_Lamen" customModuleProvider="target">
-                                            <rect key="frame" x="124" y="42" width="213.5" height="37"/>
+                                            <rect key="frame" x="124" y="42" width="213.5" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="37" id="wk1-g0-qzu"/>
                                             </constraints>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="distanceLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5R-hb-SWb">
-                                            <rect key="frame" x="124" y="87" width="243" height="16"/>
+                                            <rect key="frame" x="124" y="74" width="243" height="29"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -220,7 +217,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="sortBtn" destination="vXb-m3-Nv5" id="Ve8-d0-VYL"/>
-                        <segue destination="Pj1-4L-Urv" kind="show" identifier="showMap" id="PkM-x8-Bhv"/>
+                        <segue destination="Pj1-4L-Urv" kind="presentation" identifier="showMap" modalPresentationStyle="fullScreen" id="PkM-x8-Bhv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWj-Kt-smx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,7 +233,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mR7-JU-mbY">
-                                <rect key="frame" x="0.0" y="64" width="375" height="510"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -263,7 +260,7 @@
                     <tabBarItem key="tabBarItem" title="Pacific League" image="first" id="gUj-fo-may"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xfh-55-HcD">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -282,7 +279,7 @@
                     <tabBarItem key="tabBarItem" title="Central League" image="first" id="8i2-wO-V06"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nE8-m2-15D">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -299,8 +296,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lpj-lq-gUI" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="XOM-9g-lg0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sSn-7b-Kns">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -321,4 +319,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="7G2-ns-HMi"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

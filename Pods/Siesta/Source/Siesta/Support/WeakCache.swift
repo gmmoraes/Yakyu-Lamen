@@ -8,10 +8,14 @@
 
 import Foundation
 #if os(OSX) || os(watchOS)
-    internal let MemoryWarningNotification = NSNotification.Name("Siesta.MemoryWarningNotification")
+    internal let memoryWarningNotification = NSNotification.Name("Siesta.memoryWarningNotification")
 #elseif os(iOS) || os(tvOS)
     import UIKit
-    internal let MemoryWarningNotification = NSNotification.Name.UIApplicationDidReceiveMemoryWarning
+    #if swift(>=4.2)
+        internal let memoryWarningNotification = UIApplication.didReceiveMemoryWarningNotification
+    #else
+        internal let memoryWarningNotification = NSNotification.Name.UIApplicationDidReceiveMemoryWarning
+    #endif
 #endif
 
 /**
@@ -21,7 +25,7 @@ import Foundation
 internal final class WeakCache<K: Hashable, V: AnyObject>
     {
     private var entriesByKey = [K : WeakCacheEntry<V>]()
-    private var lowMemoryObserver: AnyObject? = nil
+    private var lowMemoryObserver: AnyObject?
 
     internal var countLimit = 2048
         {
@@ -32,7 +36,7 @@ internal final class WeakCache<K: Hashable, V: AnyObject>
         {
         lowMemoryObserver =
             NotificationCenter.default.addObserver(
-                forName: MemoryWarningNotification,
+                forName: memoryWarningNotification,
                 object: nil,
                 queue: nil)
             {
@@ -83,7 +87,7 @@ internal final class WeakCache<K: Hashable, V: AnyObject>
         return AnySequence(
             entriesByKey.compactMap
                 {
-                (key, entry) -> (K, V)? in
+                key, entry in
 
                 if let value = entry.value
                     { return (key, value) }

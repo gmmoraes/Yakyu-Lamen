@@ -17,7 +17,6 @@ class PacificLeagueTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.tabBarController!.selectedIndex)
         dataSource.teams = ["SoftBank Hawks", "Seibu Lions", "Rakuten G. Eagles", "ORIX Buffaloes", "Nippon-Ham F.", "Lotte Marines"]
         dataSource.address = ["2 Chome-2-2 Jigyohama, Chuo , Fukuoka, Fukuoka Prefecture 810-8660, Japan", "2135 Kami-Yamaguchi, Tokorozawa City, Saitama","2 Chome-11-6 Miyagino, Miyagino Ward, Sendai, Miyagi Prefecture 983-0045, Japan","京セラドーム大阪, Japão, 〒550-0023 Ōsaka-fu, Ōsaka-shi, Nishi-ku, Chiyozaki, 3 Chome−中２−1","1 Hitsujigaoka, Toyohira Ward, Sapporo, Hokkaido 062-0045, Japan","1 Mihama, Mihama Ward, Chiba, Chiba Prefecture 261-0022, Japan"]
         dataSource.city = ["Fukuoka", "Tokorozawa", "Sendai", "Osaka", "Sapporo","Chiba"]
