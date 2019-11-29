@@ -38,7 +38,11 @@ class DataSource: NSObject, UITableViewDataSource {
         //cell.accessoryType = .detailDisclosureButton
         cell.imageView?.image = images[indexPath.row]
         cell.backgroundColor = colors[indexPath.row]
-        cell.textLabel?.font = UIFont(name: "Avenir-Light", size: 28.0)
+        
+
+        let customFont = UIFont.loadFont(name: "TeamsFont")
+        let fontMetrics = UIFontMetrics(forTextStyle: .body)
+        cell.textLabel?.font = fontMetrics.scaledFont(for: customFont)
         
         return cell
     }

@@ -32,9 +32,11 @@
 		53CF690A21CC930000CB41D7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF690921CC930000CB41D7 /* Restaurant.swift */; };
 		53E509C621BFCC70000DA737 /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E509C521BFCC70000DA737 /* StoresTableViewController.swift */; };
 		53FDF82C21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDF82B21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift */; };
+		884F0D24238CBA6A008F2D40 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884F0D23238CBA6A008F2D40 /* Config.plist */; };
 		885830CB238B666400A4B59A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885830CA238B666400A4B59A /* Request.swift */; };
 		88595112238B54EE006166D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88595111238B54EE006166D9 /* GoogleService-Info.plist */; };
 		88595114238B61F6006166D9 /* FireBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88595113238B61F6006166D9 /* FireBaseRequest.swift */; };
+		8873685C238F64920098B4F6 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +68,11 @@
 		53CF690921CC930000CB41D7 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		53E509C521BFCC70000DA737 /* StoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
 		53FDF82B21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacificLeagueDataSource.swift; sourceTree = "<group>"; };
+		884F0D23238CBA6A008F2D40 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		885830CA238B666400A4B59A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		88595111238B54EE006166D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88595113238B61F6006166D9 /* FireBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseRequest.swift; sourceTree = "<group>"; };
+		8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
 		DDBB0A09D743D3AEFFA73B5E /* Pods-Yakyu Lamen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yakyu Lamen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +110,7 @@
 		5348D14421BD78740009990C /* Yakyu Lamen */ = {
 			isa = PBXGroup;
 			children = (
+				884F0D20238CAD40008F2D40 /* Extensions */,
 				53CFC6D321CCFB9B0021D10C /* API */,
 				53CFC6D221CCFB940021D10C /* Controllers */,
 				53CFC6D121CCFB8B0021D10C /* View */,
@@ -116,6 +121,7 @@
 				5348D15021BD78770009990C /* LaunchScreen.storyboard */,
 				5348D15321BD78770009990C /* Info.plist */,
 				88595111238B54EE006166D9 /* GoogleService-Info.plist */,
+				884F0D23238CBA6A008F2D40 /* Config.plist */,
 			);
 			path = "Yakyu Lamen";
 			sourceTree = "<group>";
@@ -202,6 +208,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		884F0D20238CAD40008F2D40 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F598E74F5D5FA22412B5884B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5348D15221BD78770009990C /* LaunchScreen.storyboard in Resources */,
+				884F0D24238CBA6A008F2D40 /* Config.plist in Resources */,
 				88595112238B54EE006166D9 /* GoogleService-Info.plist in Resources */,
 				5348D14F21BD78770009990C /* Assets.xcassets in Resources */,
 				5348D14D21BD78740009990C /* Main.storyboard in Resources */,
@@ -344,6 +359,7 @@
 				5348D14621BD78740009990C /* AppDelegate.swift in Sources */,
 				5348D15A21BD7B240009990C /* LaunchScreenViewController.swift in Sources */,
 				885830CB238B666400A4B59A /* Request.swift in Sources */,
+				8873685C238F64920098B4F6 /* UIFont+CustomFonts.swift in Sources */,
 				531BCFA321BDDADF0023CA54 /* DataSource.swift in Sources */,
 				53AEEF652324028A003EA007 /* YelpRequest.swift in Sources */,
 				5367921621DDBF8A007F56BD /* LeagueTableViewController.swift in Sources */,
@@ -497,7 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S4RC49GBK;
 				INFOPLIST_FILE = "Yakyu Lamen/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,7 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S4RC49GBK;
 				INFOPLIST_FILE = "Yakyu Lamen/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
