@@ -44,14 +44,11 @@ import UIKit
             fatalError("The button, \(button), is not in the ratingButtons array: \(ratingButtons)")
         }
         
-        // Calculate the rating of the selected button
         let selectedRating = index + 1
         
         if selectedRating == rating {
-            // If the selected star represents the current rating, reset the rating to 0.
             rating = 0
         } else {
-            // Otherwise set the rating to the selected star
             rating = selectedRating
         }
     }
@@ -59,9 +56,7 @@ import UIKit
     //MARK: Private Methods
     private func setupButtons() {
         
-        // Load Button Images
         let bundle = Bundle(for: type(of: self))
-        //let highlightedStar = UIImage(named: "bStar", in: bundle, compatibleWith: self.traitCollection)
         let emptyStar = UIImage(named:"cStar", in: bundle, compatibleWith: self.traitCollection)
         let selectedStar = UIImage(named:"rStar", in: bundle, compatibleWith: self.traitCollection)
         
@@ -73,26 +68,18 @@ import UIKit
         ratingButtons.removeAll()
         
         for _ in 0..<starCount {
-            // Create the button
             let button = UIButton()
-            // Set the button images
             button.setImage(emptyStar, for: .normal)
             button.setImage(selectedStar, for: .selected)
-            //button.setImage(highlightedStar, for: .highlighted)
-            //button.setImage(highlightedStar, for: [.highlighted, .selected])
             
-            // Add constraints
             button.translatesAutoresizingMaskIntoConstraints = false
-            button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true
-            button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true
+            button.heightAnchor.constraint(equalToConstant: self.frame.height * 0.80).isActive = true
             
-            // Setup the button action
+            button.contentMode = .scaleAspectFit
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside)
             
-            // Add the button to the stack
             addArrangedSubview(button)
             
-            // Add the new button to the rating button array
             ratingButtons.append(button)
         }
         
@@ -101,7 +88,6 @@ import UIKit
     
     private func updateButtonSelectionStates() {
         for (index, button) in ratingButtons.enumerated() {
-            // If the index of a button is less than the rating, that button should be selected.
             button.isSelected = index < rating
         }
     }

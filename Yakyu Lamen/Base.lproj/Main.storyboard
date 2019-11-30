@@ -169,14 +169,11 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-ge-2hB" customClass="RatingControl" customModule="Yakyu_Lamen" customModuleProvider="target">
-                                            <rect key="frame" x="124" y="42" width="213.5" height="24"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="37" id="wk1-g0-qzu"/>
-                                            </constraints>
+                                        <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-ge-2hB" customClass="RatingControl" customModule="Yakyu_Lamen" customModuleProvider="target">
+                                            <rect key="frame" x="124" y="42" width="213.5" height="37"/>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="distanceLabel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5R-hb-SWb">
-                                            <rect key="frame" x="124" y="74" width="243" height="29"/>
+                                            <rect key="frame" x="124" y="87" width="243" height="16"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -193,7 +190,7 @@
                                         <constraint firstItem="W6L-HI-W22" firstAttribute="leading" secondItem="vw9-j9-4mt" secondAttribute="leading" id="FaE-at-QzO"/>
                                         <constraint firstItem="W6L-HI-W22" firstAttribute="top" secondItem="vw9-j9-4mt" secondAttribute="top" id="Wvm-Gq-xZK"/>
                                         <constraint firstAttribute="bottom" secondItem="W6L-HI-W22" secondAttribute="bottom" id="b1P-XN-SHh"/>
-                                        <constraint firstItem="0FV-ge-2hB" firstAttribute="width" secondItem="vw9-j9-4mt" secondAttribute="width" multiplier="0.9" constant="-124" id="j4H-91-mG3"/>
+                                        <constraint firstAttribute="trailing" secondItem="0FV-ge-2hB" secondAttribute="trailing" constant="37.5" id="kjU-r7-uwU"/>
                                         <constraint firstAttribute="trailing" secondItem="xpR-9K-URF" secondAttribute="trailing" id="lve-ak-V81"/>
                                         <constraint firstItem="r5R-hb-SWb" firstAttribute="leading" secondItem="W6L-HI-W22" secondAttribute="trailing" constant="8" id="ryT-Rz-dEw"/>
                                     </constraints>
@@ -317,7 +314,7 @@
         <image name="hface" width="592" height="520"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7G2-ns-HMi"/>
+        <segue reference="Fid-e5-AIZ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
