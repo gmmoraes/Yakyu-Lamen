@@ -43,7 +43,6 @@ class YelpRequest: Request {
 
             let jsonDecoder = JSONDecoder()
 
-            //let jsonData = try? JSONSerialization.data(withJSONObject:resultObject)
 
             do {
 

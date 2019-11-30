@@ -34,6 +34,9 @@ class StoresTableViewController: UITableViewController {
             })
         }
         
+        let a = FireBaseRequest()
+        a.retrieveData()
+        
         //Navigation
         self.navigationItem.title = title
         self.navigationController?.navigationBar.barTintColor = .white

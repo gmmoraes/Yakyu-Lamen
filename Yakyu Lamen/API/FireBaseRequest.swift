@@ -11,20 +11,25 @@ import FirebaseDatabase
 
 
 class FireBaseRequest {
-    // 1
-    let rootRef = Database.database().reference()
 
-    // 2
-    let childRef = Database.database().reference(withPath: "grocery-items")
+    let firebaseRootDb = Database.database().reference()
+
     
     
     
     
     func retrieveData(){
-        childRef.observe(.value, with: { snapshot in
-          // This is the snapshot of the data at the moment in the Firebase database
-          // To get value from the snapshot, we user snapshot.value
-          print(snapshot.value as Any)
+        firebaseRootDb.observe(.value, with: { snapshot in
+
+         print("-------------------------------------1")
+            let valueDict = snapshot.value as? NSDictionary
+            let firebaseDB = valueDict?["tabelog-ffe28:"] as? NSDictionary
+            let citiesDict = firebaseDB?["Cities"]
+            
+
+            print(citiesDict)
+
+            print("-------------------------------------2")
         })
     }
     

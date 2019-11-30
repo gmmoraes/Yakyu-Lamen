@@ -214,7 +214,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="sortBtn" destination="vXb-m3-Nv5" id="Ve8-d0-VYL"/>
-                        <segue destination="Pj1-4L-Urv" kind="presentation" identifier="showMap" modalPresentationStyle="fullScreen" id="PkM-x8-Bhv"/>
+                        <segue destination="Pj1-4L-Urv" kind="show" identifier="showMap" id="PkM-x8-Bhv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWj-Kt-smx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mR7-JU-mbY">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -242,6 +242,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bbi-Mn-OxA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xdw-YY-wr8"/>
                     <connections>
                         <outlet property="mapView" destination="mR7-JU-mbY" id="gdw-qw-pkd"/>
                     </connections>
@@ -297,6 +298,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sSn-7b-Kns">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -314,7 +316,7 @@
         <image name="hface" width="592" height="520"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fid-e5-AIZ"/>
+        <segue reference="7G2-ns-HMi"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
