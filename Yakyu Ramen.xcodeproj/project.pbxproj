@@ -512,7 +512,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S4RC49GBK;
-				INFOPLIST_FILE = "Yakyu Lamen/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Yakyu Ramen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,7 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S4RC49GBK;
-				INFOPLIST_FILE = "Yakyu Lamen/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Yakyu Ramen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
