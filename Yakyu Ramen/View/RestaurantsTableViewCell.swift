@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Siesta
+//import Siesta
 
 class RestaurantsTableViewCell: UITableViewCell {
     

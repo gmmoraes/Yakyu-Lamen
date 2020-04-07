@@ -1,0 +1,6 @@
+framework module Pods_Yakyu_Ramen {
+  umbrella header "Pods-Yakyu Ramen-umbrella.h"
+
+  export *
+  module * { export * }
+}

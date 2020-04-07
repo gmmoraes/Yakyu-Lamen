@@ -18,8 +18,8 @@ class LeagueTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.tabBarController!.selectedIndex)
-        if(self.tabBarController!.selectedIndex==0){
+        //print(self.tabBarController!.selectedIndex)
+        if(self.tabBarController?.selectedIndex==0){
             dataSource.teams = centralLeague.teams
             dataSource.address = centralLeague.address
             dataSource.latitudes = centralLeague.latitudes
@@ -31,7 +31,7 @@ class LeagueTableViewController: UITableViewController {
             dataSource.longitudes = centralLeague.longitudes
 
             
-        }else if(self.tabBarController!.selectedIndex==1){
+        }else if(self.tabBarController?.selectedIndex==1){
             dataSource.teams = pacificLeague.teams
             dataSource.address = pacificLeague.address
             dataSource.latitudes = pacificLeague.latitudes

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		110CDA8C0A9D3D2E9AC1339B /* Pods_Yakyu_Lamen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 035201B4C092CB2131F95126 /* Pods_Yakyu_Lamen.framework */; };
+		176E4BAF64D35876765E84B9 /* libPods-YakyuRamenTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F20C18B659875F38707F673E /* libPods-YakyuRamenTests.a */; };
 		53185DBC21C4ACB1006558F8 /* YelpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53185DBB21C4ACB1006558F8 /* YelpAPI.swift */; };
 		531BCFA321BDDADF0023CA54 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BCFA221BDDADF0023CA54 /* DataSource.swift */; };
 		531BCFA521BDE5110023CA54 /* CentralLeagueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531BCFA421BDE5110023CA54 /* CentralLeagueTableViewController.swift */; };
@@ -32,16 +32,28 @@
 		53CF690A21CC930000CB41D7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CF690921CC930000CB41D7 /* Restaurant.swift */; };
 		53E509C621BFCC70000DA737 /* StoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E509C521BFCC70000DA737 /* StoresTableViewController.swift */; };
 		53FDF82C21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FDF82B21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift */; };
+		88464751241E96B300A3EF5A /* ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88464750241E96B300A3EF5A /* ViewTests.swift */; };
 		884F0D24238CBA6A008F2D40 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 884F0D23238CBA6A008F2D40 /* Config.plist */; };
 		885830CB238B666400A4B59A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885830CA238B666400A4B59A /* Request.swift */; };
 		88595112238B54EE006166D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88595111238B54EE006166D9 /* GoogleService-Info.plist */; };
 		88595114238B61F6006166D9 /* FireBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88595113238B61F6006166D9 /* FireBaseRequest.swift */; };
 		8873685C238F64920098B4F6 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */; };
+		88E4224B23D35A66005483E2 /* YakyuRamenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E4224A23D35A66005483E2 /* YakyuRamenTests.swift */; };
+		88E4225223D381C7005483E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5348D14E21BD78770009990C /* Assets.xcassets */; };
+		AB1EEC2C7F2E8AAE3D17D8C6 /* Pods_Yakyu_Ramen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA537903995D1DAE8C8617F3 /* Pods_Yakyu_Ramen.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		88E4224D23D35A66005483E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5348D13A21BD78740009990C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5348D14121BD78740009990C;
+			remoteInfo = "Yakyu Ramen";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		035201B4C092CB2131F95126 /* Pods_Yakyu_Lamen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yakyu_Lamen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		194009617F069CB2A6FCBDB3 /* Pods-Yakyu Lamen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yakyu Lamen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen.release.xcconfig"; sourceTree = "<group>"; };
 		53185DBB21C4ACB1006558F8 /* YelpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPI.swift; sourceTree = "<group>"; };
 		531BCFA221BDDADF0023CA54 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		531BCFA421BDE5110023CA54 /* CentralLeagueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralLeagueTableViewController.swift; sourceTree = "<group>"; };
@@ -68,12 +80,21 @@
 		53CF690921CC930000CB41D7 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		53E509C521BFCC70000DA737 /* StoresTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresTableViewController.swift; sourceTree = "<group>"; };
 		53FDF82B21DE4ACE00F7C5C0 /* PacificLeagueDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacificLeagueDataSource.swift; sourceTree = "<group>"; };
+		626D9526AFD63317382517E3 /* Pods-YakyuRamenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YakyuRamenTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YakyuRamenTests/Pods-YakyuRamenTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE69C1DECFEED50831949AC /* Pods-Yakyu Ramen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yakyu Ramen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yakyu Ramen/Pods-Yakyu Ramen.debug.xcconfig"; sourceTree = "<group>"; };
+		88464750241E96B300A3EF5A /* ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTests.swift; sourceTree = "<group>"; };
 		884F0D23238CBA6A008F2D40 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		885830CA238B666400A4B59A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		88595111238B54EE006166D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88595113238B61F6006166D9 /* FireBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseRequest.swift; sourceTree = "<group>"; };
 		8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
-		DDBB0A09D743D3AEFFA73B5E /* Pods-Yakyu Lamen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yakyu Lamen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen.debug.xcconfig"; sourceTree = "<group>"; };
+		88E4224823D35A66005483E2 /* YakyuRamenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YakyuRamenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E4224A23D35A66005483E2 /* YakyuRamenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YakyuRamenTests.swift; sourceTree = "<group>"; };
+		88E4224C23D35A66005483E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A855D69B9E729CF4EE1FC450 /* Pods-Yakyu Ramen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yakyu Ramen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yakyu Ramen/Pods-Yakyu Ramen.release.xcconfig"; sourceTree = "<group>"; };
+		CA537903995D1DAE8C8617F3 /* Pods_Yakyu_Ramen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yakyu_Ramen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7DA431FC892B4ECC6743896 /* Pods-YakyuRamenTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YakyuRamenTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YakyuRamenTests/Pods-YakyuRamenTests.release.xcconfig"; sourceTree = "<group>"; };
+		F20C18B659875F38707F673E /* libPods-YakyuRamenTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YakyuRamenTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +103,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5341BCF121D9ACA300F024A3 /* MapKit.framework in Frameworks */,
-				110CDA8C0A9D3D2E9AC1339B /* Pods_Yakyu_Lamen.framework in Frameworks */,
+				AB1EEC2C7F2E8AAE3D17D8C6 /* Pods_Yakyu_Ramen.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88E4224523D35A66005483E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176E4BAF64D35876765E84B9 /* libPods-YakyuRamenTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5348D14421BD78740009990C /* Yakyu Ramen */,
+				88E4224923D35A66005483E2 /* YakyuRamenTests */,
 				5348D14321BD78740009990C /* Products */,
 				F598E74F5D5FA22412B5884B /* Pods */,
 				745E572ED3E15E9E44EE9ABD /* Frameworks */,
@@ -103,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				5348D14221BD78740009990C /* Yakyu Ramen.app */,
+				88E4224823D35A66005483E2 /* YakyuRamenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,7 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				5341BCF021D9ACA300F024A3 /* MapKit.framework */,
-				035201B4C092CB2131F95126 /* Pods_Yakyu_Lamen.framework */,
+				CA537903995D1DAE8C8617F3 /* Pods_Yakyu_Ramen.framework */,
+				F20C18B659875F38707F673E /* libPods-YakyuRamenTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,11 +248,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		88E4224923D35A66005483E2 /* YakyuRamenTests */ = {
+			isa = PBXGroup;
+			children = (
+				88E4224A23D35A66005483E2 /* YakyuRamenTests.swift */,
+				88E4224C23D35A66005483E2 /* Info.plist */,
+				88464750241E96B300A3EF5A /* ViewTests.swift */,
+			);
+			path = YakyuRamenTests;
+			sourceTree = "<group>";
+		};
 		F598E74F5D5FA22412B5884B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DDBB0A09D743D3AEFFA73B5E /* Pods-Yakyu Lamen.debug.xcconfig */,
-				194009617F069CB2A6FCBDB3 /* Pods-Yakyu Lamen.release.xcconfig */,
+				6BE69C1DECFEED50831949AC /* Pods-Yakyu Ramen.debug.xcconfig */,
+				A855D69B9E729CF4EE1FC450 /* Pods-Yakyu Ramen.release.xcconfig */,
+				626D9526AFD63317382517E3 /* Pods-YakyuRamenTests.debug.xcconfig */,
+				E7DA431FC892B4ECC6743896 /* Pods-YakyuRamenTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -232,11 +276,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5348D15621BD78770009990C /* Build configuration list for PBXNativeTarget "Yakyu Ramen" */;
 			buildPhases = (
-				B85101FD5630FCA0D2770DE7 /* [CP] Check Pods Manifest.lock */,
+				42C53CDC7C12F6E9B1B5A1AF /* [CP] Check Pods Manifest.lock */,
 				5348D13E21BD78740009990C /* Sources */,
 				5348D13F21BD78740009990C /* Frameworks */,
 				5348D14021BD78740009990C /* Resources */,
-				8446CA4B4119C3D4819CE658 /* [CP] Embed Pods Frameworks */,
+				8EF4257B72CE1BF66AAFAA5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,13 +291,32 @@
 			productReference = 5348D14221BD78740009990C /* Yakyu Ramen.app */;
 			productType = "com.apple.product-type.application";
 		};
+		88E4224723D35A66005483E2 /* YakyuRamenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88E4224F23D35A66005483E2 /* Build configuration list for PBXNativeTarget "YakyuRamenTests" */;
+			buildPhases = (
+				7265F51E1AF25A27C535A595 /* [CP] Check Pods Manifest.lock */,
+				88E4224423D35A66005483E2 /* Sources */,
+				88E4224523D35A66005483E2 /* Frameworks */,
+				88E4224623D35A66005483E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88E4224E23D35A66005483E2 /* PBXTargetDependency */,
+			);
+			name = YakyuRamenTests;
+			productName = YakyuRamenTests;
+			productReference = 88E4224823D35A66005483E2 /* YakyuRamenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5348D13A21BD78740009990C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Gabriel;
 				TargetAttributes = {
@@ -264,6 +327,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					88E4224723D35A66005483E2 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 5348D14121BD78740009990C;
 					};
 				};
 			};
@@ -281,6 +348,7 @@
 			projectRoot = "";
 			targets = (
 				5348D14121BD78740009990C /* Yakyu Ramen */,
+				88E4224723D35A66005483E2 /* YakyuRamenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,42 +366,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88E4224623D35A66005483E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E4225223D381C7005483E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8446CA4B4119C3D4819CE658 /* [CP] Embed Pods Frameworks */ = {
+		42C53CDC7C12F6E9B1B5A1AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yakyu Lamen/Pods-Yakyu Lamen-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B85101FD5630FCA0D2770DE7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Yakyu Lamen-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Yakyu Ramen-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7265F51E1AF25A27C535A595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YakyuRamenTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF4257B72CE1BF66AAFAA5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yakyu Ramen/Pods-Yakyu Ramen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yakyu Ramen/Pods-Yakyu Ramen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yakyu Ramen/Pods-Yakyu Ramen-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -369,7 +471,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88E4224423D35A66005483E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88464751241E96B300A3EF5A /* ViewTests.swift in Sources */,
+				88E4224B23D35A66005483E2 /* YakyuRamenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88E4224E23D35A66005483E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5348D14121BD78740009990C /* Yakyu Ramen */;
+			targetProxy = 88E4224D23D35A66005483E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5348D14B21BD78740009990C /* Main.storyboard */ = {
@@ -507,18 +626,22 @@
 		};
 		5348D15721BD78770009990C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDBB0A09D743D3AEFFA73B5E /* Pods-Yakyu Lamen.debug.xcconfig */;
+			baseConfigurationReference = 6BE69C1DECFEED50831949AC /* Pods-Yakyu Ramen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S4RC49GBK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swift-snapshot-testing-nimble-master/Example/build/Debug-iphonesimulator/Nimble",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Yakyu Ramen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "gm.ios.Yakyu-Lamen";
+				PRODUCT_BUNDLE_IDENTIFIER = "gm.ios.Yakyu-Ramen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,21 +650,78 @@
 		};
 		5348D15821BD78770009990C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 194009617F069CB2A6FCBDB3 /* Pods-Yakyu Lamen.release.xcconfig */;
+			baseConfigurationReference = A855D69B9E729CF4EE1FC450 /* Pods-Yakyu Ramen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6S4RC49GBK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swift-snapshot-testing-nimble-master/Example/build/Debug-iphonesimulator/Nimble",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Yakyu Ramen/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "gm.ios.Yakyu-Lamen";
+				PRODUCT_BUNDLE_IDENTIFIER = "gm.ios.Yakyu-Ramen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88E4225023D35A66005483E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626D9526AFD63317382517E3 /* Pods-YakyuRamenTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swift-snapshot-testing-nimble-master/Example/build/Debug-iphonesimulator/Nimble",
+				);
+				INFOPLIST_FILE = YakyuRamenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = gmmoraes.YakyuRamenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yakyu Ramen.app/Yakyu Ramen";
+			};
+			name = Debug;
+		};
+		88E4225123D35A66005483E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DA431FC892B4ECC6743896 /* Pods-YakyuRamenTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swift-snapshot-testing-nimble-master/Example/build/Debug-iphonesimulator/Nimble",
+				);
+				INFOPLIST_FILE = YakyuRamenTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = gmmoraes.YakyuRamenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yakyu Ramen.app/Yakyu Ramen";
 			};
 			name = Release;
 		};
@@ -562,6 +742,15 @@
 			buildConfigurations = (
 				5348D15721BD78770009990C /* Debug */,
 				5348D15821BD78770009990C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88E4224F23D35A66005483E2 /* Build configuration list for PBXNativeTarget "YakyuRamenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88E4225023D35A66005483E2 /* Debug */,
+				88E4225123D35A66005483E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
