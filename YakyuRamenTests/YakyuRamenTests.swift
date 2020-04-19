@@ -149,6 +149,24 @@ class YakyuRamenTests: XCTestCase {
         }
         viewController.endAppearanceTransition()
     }
+    
+    func testLauchScreen() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard
+            .instantiateViewController(withIdentifier: "LaunchScreenViewController")
+        
+        viewController.loadView()
+        viewController.view.layoutSubviews()
+        viewController.beginAppearanceTransition(true, animated: false)
+        
+        for (name, config) in devices {
+            assertSnapshot(matching: viewController, as: .image(on: config, precision: 1.00), named: name, record: false)
+        }
+        
+        
+        viewController.endAppearanceTransition()
+    }
 
 
 }

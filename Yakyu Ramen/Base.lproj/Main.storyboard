@@ -48,27 +48,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yakyu Lamen" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-84-yS8">
-                                <rect key="frame" x="67" y="283" width="240" height="101"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Yakyu Lamen" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-84-yS8">
+                                <rect key="frame" x="67" y="283" width="240.00000000000011" height="101"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ndA-84-yS8" secondAttribute="height" multiplier="239:101" id="MoG-v4-fnv"/>
+                                    <constraint firstAttribute="width" secondItem="ndA-84-yS8" secondAttribute="height" multiplier="2:1" id="cTk-nK-inL"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hface" translatesAutoresizingMaskIntoConstraints="NO" id="fUx-HB-bWk">
-                                <rect key="frame" x="168" y="368" width="39" height="25"/>
+                                <rect key="frame" x="169" y="400" width="37.5" height="37.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="5ZO-o2-AAH"/>
+                                    <constraint firstAttribute="width" secondItem="fUx-HB-bWk" secondAttribute="height" id="70R-WK-gJP"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.7803921568627451" green="0.15294117647058825" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fUx-HB-bWk" firstAttribute="centerX" secondItem="i3f-lH-Xkx" secondAttribute="centerX" id="0Ph-Im-joc"/>
-                            <constraint firstItem="ndA-84-yS8" firstAttribute="leading" secondItem="i3f-lH-Xkx" secondAttribute="leading" constant="67" id="BVW-1l-sfu"/>
-                            <constraint firstItem="i3f-lH-Xkx" firstAttribute="trailing" secondItem="ndA-84-yS8" secondAttribute="trailing" constant="68.000000000000114" id="D9U-Ht-De8"/>
-                            <constraint firstItem="i3f-lH-Xkx" firstAttribute="trailing" secondItem="fUx-HB-bWk" secondAttribute="trailing" constant="168" id="rfx-n4-1UM"/>
-                            <constraint firstItem="fUx-HB-bWk" firstAttribute="top" secondItem="ndA-84-yS8" secondAttribute="bottom" constant="-16" id="tvy-F7-mFf"/>
-                            <constraint firstItem="ndA-84-yS8" firstAttribute="centerY" secondItem="i3f-lH-Xkx" secondAttribute="centerY" id="yAc-46-GsF"/>
+                            <constraint firstItem="ndA-84-yS8" firstAttribute="width" secondItem="i3f-lH-Xkx" secondAttribute="width" multiplier="0.6" id="3jT-Mg-h5S"/>
+                            <constraint firstItem="ndA-84-yS8" firstAttribute="centerX" secondItem="i3f-lH-Xkx" secondAttribute="centerX" id="9c7-8m-tEy"/>
+                            <constraint firstItem="fUx-HB-bWk" firstAttribute="width" secondItem="i3f-lH-Xkx" secondAttribute="width" multiplier="0.1" id="CbK-6H-fYe"/>
+                            <constraint firstItem="fUx-HB-bWk" firstAttribute="centerX" secondItem="ndA-84-yS8" secondAttribute="centerX" id="Pg3-RL-yNf"/>
+                            <constraint firstItem="ndA-84-yS8" firstAttribute="centerY" secondItem="i3f-lH-Xkx" secondAttribute="centerY" id="fWg-Q4-oHr"/>
+                            <constraint firstItem="fUx-HB-bWk" firstAttribute="top" secondItem="ndA-84-yS8" secondAttribute="bottom" constant="10" id="uSI-pr-KBm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i3f-lH-Xkx"/>
                     </view>
