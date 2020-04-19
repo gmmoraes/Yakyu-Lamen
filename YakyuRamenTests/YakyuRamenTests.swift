@@ -16,6 +16,7 @@ class YakyuRamenTests: XCTestCase {
     let leagueTableView = LeagueTableViewController()
     let launchScreenVC = LaunchScreenViewController()
     //let appBundle = Bundle(for: type(of: LaunchScreenViewController) as! LaunchScreenViewController)
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
     override func setUp() {
               
@@ -46,12 +47,40 @@ class YakyuRamenTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testViewTemplate2(identifier:String, precision:Float, shouldRecord: Bool = false) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard
+            .instantiateViewController(withIdentifier: "LaunchScreenViewController")
+        
+        viewController.loadView()
+        viewController.view.layoutSubviews()
+        viewController.beginAppearanceTransition(true, animated: false)
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        for (name, config) in devices {
+            assertSnapshot(matching: viewController, as: .image(on: config, precision: precision), named: name, record: shouldRecord)
+        }
+        
+        
+        viewController.endAppearanceTransition()
     }
     
+    func configVC(identifier:String) -> UIViewController {
+        
+        let viewController = storyboard
+            .instantiateViewController(withIdentifier: identifier)
+        
+        viewController.loadView()
+        viewController.view.layoutSubviews()
+        viewController.beginAppearanceTransition(true, animated: false)
+        
+        return viewController
+
+    }
+
+
+
     func testViewInMultipleDevices(viewController: UIViewController, devices: [(String, ViewImageConfig)]) {
         for (name, config) in devices {
             assertSnapshot(matching: viewController, as: .image(on: config), named: name)
@@ -151,20 +180,10 @@ class YakyuRamenTests: XCTestCase {
     }
     
     func testLauchScreen() {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard
-            .instantiateViewController(withIdentifier: "LaunchScreenViewController")
-        
-        viewController.loadView()
-        viewController.view.layoutSubviews()
-        viewController.beginAppearanceTransition(true, animated: false)
-        
+        let viewController = configVC(identifier: "LaunchScreenViewController")
         for (name, config) in devices {
             assertSnapshot(matching: viewController, as: .image(on: config, precision: 1.00), named: name, record: false)
         }
-        
-        
         viewController.endAppearanceTransition()
     }
 
