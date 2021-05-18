@@ -38,6 +38,7 @@
 		88595112238B54EE006166D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 88595111238B54EE006166D9 /* GoogleService-Info.plist */; };
 		88595114238B61F6006166D9 /* FireBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88595113238B61F6006166D9 /* FireBaseRequest.swift */; };
 		8873685C238F64920098B4F6 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */; };
+		889A2E43244D36E800922115 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A2E42244D36E800922115 /* Storage.swift */; };
 		88E4224B23D35A66005483E2 /* YakyuRamenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E4224A23D35A66005483E2 /* YakyuRamenTests.swift */; };
 		88E4225223D381C7005483E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5348D14E21BD78770009990C /* Assets.xcassets */; };
 		AB1EEC2C7F2E8AAE3D17D8C6 /* Pods_Yakyu_Ramen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA537903995D1DAE8C8617F3 /* Pods_Yakyu_Ramen.framework */; };
@@ -88,6 +89,7 @@
 		88595111238B54EE006166D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		88595113238B61F6006166D9 /* FireBaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseRequest.swift; sourceTree = "<group>"; };
 		8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
+		889A2E42244D36E800922115 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		88E4224823D35A66005483E2 /* YakyuRamenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YakyuRamenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E4224A23D35A66005483E2 /* YakyuRamenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YakyuRamenTests.swift; sourceTree = "<group>"; };
 		88E4224C23D35A66005483E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		5348D14421BD78740009990C /* Yakyu Ramen */ = {
 			isa = PBXGroup;
 			children = (
+				889A2E41244D36D200922115 /* Services */,
 				884F0D20238CAD40008F2D40 /* Extensions */,
 				53CFC6D321CCFB9B0021D10C /* API */,
 				53CFC6D221CCFB940021D10C /* Controllers */,
@@ -246,6 +249,14 @@
 				8873685B238F64920098B4F6 /* UIFont+CustomFonts.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		889A2E41244D36D200922115 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				889A2E42244D36E800922115 /* Storage.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		88E4224923D35A66005483E2 /* YakyuRamenTests */ = {
@@ -450,6 +461,7 @@
 				5341BCF321D9ACFB00F024A3 /* MapPoints.swift in Sources */,
 				5371CDE721DD39D9003A51B3 /* StoreMapController.swift in Sources */,
 				537AE0CA21BD9079000E3E0C /* Teams.swift in Sources */,
+				889A2E43244D36E800922115 /* Storage.swift in Sources */,
 				5371CDE921DD5381003A51B3 /* LeagueMapController.swift in Sources */,
 				53E509C621BFCC70000DA737 /* StoresTableViewController.swift in Sources */,
 				535C349A21D59E170033D560 /* RatingControl.swift in Sources */,
